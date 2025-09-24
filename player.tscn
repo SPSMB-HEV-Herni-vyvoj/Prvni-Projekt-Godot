@@ -2,8 +2,8 @@
 
 [ext_resource type="Texture2D" uid="uid://cfcscjq35rh3p" path="res://Player16x16.png" id="1_tr1eh"]
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_7wct8"]
-size = Vector2(32, 41)
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_u4tm5"]
+height = 41.0
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_pmsm6"]
 atlas = ExtResource("1_tr1eh")
@@ -143,11 +143,11 @@ animations = [{
 [node name="player" type="CharacterBody2D"]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(47, 97.5)
-shape = SubResource("RectangleShape2D_7wct8")
+position = Vector2(47, 98.5)
+shape = SubResource("CapsuleShape2D_u4tm5")
 
 [node name="PlayerAnimation" type="AnimatedSprite2D" parent="."]
-position = Vector2(48, 98)
+position = Vector2(46, 99)
 scale = Vector2(2.5, 2.5)
 sprite_frames = SubResource("SpriteFrames_x3vy7")
 animation = &"jump"
